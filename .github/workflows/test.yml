@@ -1,0 +1,20 @@
+name: Test GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: aditya.kondai@straive.com
+        run: echo "Hello, world!"
+
+      - name: Print repository details
+        run: echo "This is a test action in the repository"
